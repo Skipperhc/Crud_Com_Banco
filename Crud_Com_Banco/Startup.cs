@@ -23,8 +23,8 @@ namespace Crud_Com_Banco {
         public void ConfigureServices(IServiceCollection services) {
             services.AddControllersWithViews();
 
-    services.AddDbContext<Crud_Com_BancoContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("Crud_Com_BancoContext")));
+            services.AddDbContext<Crud_Com_BancoContext>(options =>
+            options.UseMySql(Configuration.GetConnectionString("Crud_Com_BancoContext"), builder => builder.MigrationsAssembly("Crud_Com_Banco")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

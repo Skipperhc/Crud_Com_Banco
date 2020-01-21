@@ -171,3 +171,9 @@ C:\Users\VRHC\source\repos\Crud_Com_Banco\Crud_Com_Banco\bin\Debug\netcoreapp3.1
 C:\Users\VRHC\source\repos\Crud_Com_Banco\Crud_Com_Banco\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\VRHC\source\repos\Crud_Com_Banco\Crud_Com_Banco\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\VRHC\source\repos\Crud_Com_Banco\Crud_Com_Banco\obj\Debug\netcoreapp3.1\Crud_Com_Banco.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\VRHC\source\repos\Crud_Com_Banco\Crud_Com_Banco\obj\Debug\netcoreapp3.1\Razor\Views\Departments\Create.cshtml.g.cs
+C:\Users\VRHC\source\repos\Crud_Com_Banco\Crud_Com_Banco\obj\Debug\netcoreapp3.1\Razor\Views\Departments\Delete.cshtml.g.cs
+C:\Users\VRHC\source\repos\Crud_Com_Banco\Crud_Com_Banco\obj\Debug\netcoreapp3.1\Razor\Views\Departments\Details.cshtml.g.cs
+C:\Users\VRHC\source\repos\Crud_Com_Banco\Crud_Com_Banco\obj\Debug\netcoreapp3.1\Razor\Views\Departments\Edit.cshtml.g.cs
+C:\Users\VRHC\source\repos\Crud_Com_Banco\Crud_Com_Banco\obj\Debug\netcoreapp3.1\Razor\Views\Departments\Index.cshtml.g.cs
+C:\Users\VRHC\source\repos\Crud_Com_Banco\Crud_Com_Banco\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Debug.dll
