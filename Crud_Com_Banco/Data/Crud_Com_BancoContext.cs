@@ -11,6 +11,8 @@ namespace Crud_Com_Banco.Data {
             : base(options) {
         }
 
-        public DbSet<Crud_Com_Banco.Models.Department> Department { get; set; }
+        public DbSet<Department> Department { get; set; }
+        public DbSet<Seller> Seller { get; set; }
+        public DbSet<SalesRecord> SalesRecord { get; set; }
     }
 }
