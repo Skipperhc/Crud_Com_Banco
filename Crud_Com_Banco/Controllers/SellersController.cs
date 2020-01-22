@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Crud_Com_Banco.Models;
+using Crud_Com_Banco.Models.ViewModels;
 using Crud_Com_Banco.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Crud_Com_Banco.Controllers {
     public class SellersController : Controller {
         private readonly SellerService _sellerService;
-
-        public SellersController(SellerService sellerservice) {
+        private readonly DepartmentService _departmentService;
+        public SellersController(SellerService sellerservice, DepartmentService departmentservice) {
             _sellerService = sellerservice;
+            _departmentService = departmentservice;
         }
 
         public IActionResult Index() {
@@ -20,14 +22,19 @@ namespace Crud_Com_Banco.Controllers {
         }
 
         public IActionResult Create() {
-            return View();
+            var departments = _departmentService.FindAll();
+            var viewModel = new SellerFormViewModel { Departments = departments };
+            return View(viewModel);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(Seller seller) {
+
             _sellerService.Insert(seller);
             return RedirectToAction(nameof(Index));
         }
+
+
     }
 }
