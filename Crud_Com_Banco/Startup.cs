@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Crud_Com_Banco.Data;
+using Crud_Com_Banco.Services;
 
 namespace Crud_Com_Banco {
     public class Startup {
@@ -27,7 +28,8 @@ namespace Crud_Com_Banco {
             services.AddDbContext<Crud_Com_BancoContext>(options =>
             options.UseMySql(Configuration.GetConnectionString("Crud_Com_BancoContext"), builder => builder.MigrationsAssembly("Crud_Com_Banco")));
 
-            services.AddScoped<SeedingService>(); 
+            services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
