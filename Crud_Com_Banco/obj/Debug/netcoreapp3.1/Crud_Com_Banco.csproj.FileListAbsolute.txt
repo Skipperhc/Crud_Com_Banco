@@ -177,3 +177,4 @@ C:\Users\VRHC\source\repos\Crud_Com_Banco\Crud_Com_Banco\obj\Debug\netcoreapp3.1
 C:\Users\VRHC\source\repos\Crud_Com_Banco\Crud_Com_Banco\obj\Debug\netcoreapp3.1\Razor\Views\Departments\Edit.cshtml.g.cs
 C:\Users\VRHC\source\repos\Crud_Com_Banco\Crud_Com_Banco\obj\Debug\netcoreapp3.1\Razor\Views\Departments\Index.cshtml.g.cs
 C:\Users\VRHC\source\repos\Crud_Com_Banco\Crud_Com_Banco\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Debug.dll
+C:\Users\VRHC\source\repos\Crud_Com_Banco\Crud_Com_Banco\obj\Debug\netcoreapp3.1\Razor\Views\Sellers\Index.cshtml.g.cs
