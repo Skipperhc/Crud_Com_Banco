@@ -23,14 +23,18 @@ namespace Crud_Com_Banco {
         public void ConfigureServices(IServiceCollection services) {
             services.AddControllersWithViews();
 
+
             services.AddDbContext<Crud_Com_BancoContext>(options =>
             options.UseMySql(Configuration.GetConnectionString("Crud_Com_BancoContext"), builder => builder.MigrationsAssembly("Crud_Com_Banco")));
+
+            services.AddScoped<SeedingService>(); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env) {
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, SeedingService seedingService) {
             if (env.IsDevelopment()) {
                 app.UseDeveloperExceptionPage();
+                seedingService.Seed();
             } else {
                 app.UseExceptionHandler("/Home/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
