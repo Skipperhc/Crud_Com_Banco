@@ -3,14 +3,16 @@ using System;
 using Crud_Com_Banco.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Crud_Com_Banco.Migrations
 {
     [DbContext(typeof(Crud_Com_BancoContext))]
-    partial class Crud_Com_BancoContextModelSnapshot : ModelSnapshot
+    [Migration("20200122143601_departmentsforengkey")]
+    partial class departmentsforengkey
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
